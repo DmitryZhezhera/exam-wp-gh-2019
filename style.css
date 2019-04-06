@@ -769,6 +769,599 @@ a {
   display: block; }
 
 /*--------------------------------------------------------------
+# MY STYLES
+--------------------------------------------------------------*/
+.exam-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto; }
+
+.exam-text-center {
+  text-align: center; }
+
+.exam-btn {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; }
+  .exam-btn:hover {
+    text-decoration: none; }
+  .exam-btn--more {
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: "Nunito";
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    min-width: 220px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #b4d3d3; }
+    .exam-btn--more:hover {
+      color: #fff;
+      background-color: #e2e8e8; }
+
+.exam-section-title {
+  color: #1a1a1d;
+  font-family: "Poppins";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 79px; }
+  .exam-section-title:after {
+    content: '';
+    display: block;
+    height: 50px;
+    width: 150px;
+    border-bottom: 2px solid #242424;
+    margin: 0px auto; }
+
+.exam-header {
+  position: absolute;
+  padding: 40px 0;
+  width: 100%;
+  z-index: 100; }
+  .exam-header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .exam-header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .exam-header__nav-burger-label {
+      margin: 0 25px 0 0;
+      cursor: pointer; }
+      .exam-header__nav-burger-label:hover {
+        opacity: 0.8; }
+    .exam-header__nav-burger-checkbox {
+      width: 0;
+      height: 0;
+      opacity: 0; }
+  .exam-header__nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .exam-header__nav-list a {
+      color: #1a1a1d;
+      font-family: "Nunito";
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 30px;
+      text-transform: uppercase;
+      letter-spacing: 2.8px;
+      padding: 10px 25px; }
+  .exam-header__search-form {
+    margin: 0; }
+    .exam-header__search-form-label {
+      margin: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      cursor: pointer;
+      position: relative; }
+      .exam-header__search-form-label:hover .exam-header__search-form-text {
+        position: absolute;
+        right: 70px;
+        top: 0;
+        width: 200px;
+        opacity: 1;
+        -webkit-transition: 700ms;
+        transition: 700ms;
+        -webkit-transform-origin: left;
+                transform-origin: left; }
+    .exam-header__search-form-false-submit {
+      background: url("./img/btn-search.png") no-repeat center;
+      width: 30px;
+      height: 30px;
+      content: '';
+      display: inline-block; }
+    .exam-header__search-form-text {
+      position: absolute;
+      right: 70px;
+      width: 0;
+      margin: 0;
+      padding: 0;
+      opacity: 0;
+      -webkit-transition: 700ms;
+      transition: 700ms;
+      -webkit-transform-origin: left center;
+              transform-origin: left center; }
+    .exam-header__search-form-submit {
+      width: 0;
+      height: 0;
+      opacity: 0; }
+
+.exam-home {
+  padding-top: 160px; }
+
+.exam-home-header {
+  padding-top: 160px;
+  background: url("./img/home-bg-header.jpg") no-repeat center;
+  background-size: cover; }
+  .exam-home-header__slide {
+    position: relative;
+    padding-left: 14.38%; }
+    .exam-home-header__slide-socials {
+      position: absolute;
+      left: 0;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+    .exam-home-header__slide-social {
+      padding: 20px 20px 20px 0; }
+    .exam-home-header__slide-social-link {
+      padding: 20px 20px 20px 0;
+      color: #1a1a1d; }
+      .exam-home-header__slide-social-link:hover {
+        color: #bfd9d9; }
+    .exam-home-header__slide-img {
+      width: 80%;
+      height: auto; }
+    .exam-home-header__slide-texts {
+      position: absolute;
+      bottom: 37%;
+      left: 10%;
+      max-width: 600px; }
+    .exam-home-header__slide-title {
+      color: #1a1a1d;
+      font-family: "Poppins";
+      font-size: 101px;
+      font-weight: 400;
+      line-height: 100px;
+      letter-spacing: 2.02px; }
+    .exam-home-header__slide-subtitle {
+      color: #1a1a1d;
+      font-family: "Nunito";
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 30px;
+      text-transform: uppercase;
+      letter-spacing: 3.4px; }
+    .exam-home-header__slide-btn-wrap {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      margin: 0;
+      width: 370px; }
+    .exam-home-header__slide-btn {
+      width: 70%;
+      height: 110px;
+      background-color: #b4d3d3;
+      color: #ffffff;
+      font-family: "Nunito";
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 110px;
+      text-transform: uppercase;
+      letter-spacing: 2.8px;
+      position: relative; }
+      .exam-home-header__slide-btn:hover {
+        color: white;
+        background-color: #e2e8e8; }
+      .exam-home-header__slide-btn:after {
+        position: absolute;
+        display: block;
+        width: 29%;
+        height: 100%;
+        top: 0;
+        left: 100%;
+        background-color: white;
+        content: url("./img/btn-play.jpg"); }
+
+.exam-talents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 65px; }
+  .exam-talents__categories {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  .exam-talents__category {
+    display: inline-block; }
+    .exam-talents__category-link {
+      color: #696970;
+      font-family: "Nunito";
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 2.4px;
+      padding: 16px 35px;
+      text-decoration: none; }
+      .exam-talents__category-link:hover {
+        text-decoration: none;
+        border-bottom: 2px solid #1a1a1d; }
+  .exam-talents__cards {
+    list-style: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding: 80px 0;
+    margin: 0; }
+  .exam-talents__card {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+    min-width: 240px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    position: relative;
+    -webkit-transition: 700ms;
+    transition: 700ms; }
+    .exam-talents__card:hover {
+      -webkit-transition: 700ms;
+      transition: 700ms; }
+      .exam-talents__card:hover .exam-talents__card-modal {
+        background-color: rgba(3, 4, 9, 0.81);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        padding-bottom: 20px; }
+        .exam-talents__card:hover .exam-talents__card-modal__content {
+          justify-self: end; }
+    .exam-talents__card-modal {
+      display: none; }
+    .exam-talents__card img {
+      width: 100%;
+      height: auto; }
+    .exam-talents__card-name {
+      color: #ffffff;
+      font-family: "Poppins";
+      font-size: 30px;
+      font-weight: 400;
+      letter-spacing: 0.6px; }
+    .exam-talents__card-category {
+      color: #aeaeb7;
+      font-family: "Nunito";
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 2.4px; }
+
+.exam-news__list {
+  padding: 65px 0;
+  list-style: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.exam-news__list-item {
+  padding: 20px;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  min-width: 250px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .exam-news__list-item-main {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    padding: 0 0 0 20px; }
+
+@media (max-width: 1000px) {
+  .exam-home-header__slide-title {
+    font-size: 25px; }
+  .exam-home-header__slide-btn-wrap {
+    position: inherit; } }
+
+@media (max-width: 600px) {
+  .exam-home-header {
+    padding-top: 300px; }
+  .exam-home-header__slide-texts {
+    bottom: 5%; }
+  .exam-home-header__slide-btn-wrap {
+    display: none; } }
+
+.exam-footer__first {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #f5f5f5;
+  padding: 40px 0; }
+
+.exam-footer__logo img {
+  max-width: 197px;
+  height: auto; }
+
+.exam-footer__btn-letter {
+  color: #1a1a1d;
+  font-family: "Nunito";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  border-left: 1px solid #b4d3d3;
+  padding-left: 52px; }
+  .exam-footer__btn-letter:focus, .exam-footer__btn-letter:visited {
+    color: #1a1a1d; }
+  .exam-footer__btn-letter:hover {
+    background-color: #b4d3d3; }
+  .exam-footer__btn-letter::after {
+    content: url("./img/footer-btn-letter.png");
+    position: relative;
+    margin-left: 40px;
+    top: 4px; }
+
+.exam-footer__second {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #f5f5f5;
+  padding: 50px 0; }
+
+.exam-footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 220px; }
+
+.exam-footer__socials-link {
+  padding: 10px;
+  color: #1a1a1d; }
+  .exam-footer__socials-link:hover {
+    opacity: 0.8; }
+  .exam-footer__socials-link:visited {
+    color: #1a1a1d; }
+
+.exam-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  .exam-contacts__left {
+    -ms-flex-preferred-size: 769px;
+        flex-basis: 769px;
+    min-height: 970px;
+    position: relative; }
+    .exam-contacts__left-img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    .exam-contacts__left-main {
+      position: absolute;
+      bottom: 40%;
+      right: 20%;
+      width: 50%;
+      color: white; }
+    .exam-contacts__left-title {
+      color: #ffffff;
+      font-family: "Poppins";
+      font-size: 101px;
+      font-weight: 400;
+      line-height: 104px;
+      letter-spacing: 2.02px;
+      padding-bottom: 50px; }
+    .exam-contacts__left-subtitle {
+      font-family: "Nunito";
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 30px;
+      text-transform: uppercase;
+      color: #ffffff;
+      letter-spacing: 3.4px; }
+    .exam-contacts__left-btn {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background: url("./img/btn-contacts.jpg") no-repeat center;
+      background-size: 100% 100%;
+      width: 530px;
+      height: 110px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      padding-right: 20%;
+      color: #ffffff;
+      font-family: "Nunito";
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 30px;
+      text-transform: uppercase;
+      letter-spacing: 2.8px; }
+      .exam-contacts__left-btn:hover {
+        color: white;
+        -webkit-box-shadow: 0 0 10px #b4d3d3;
+                box-shadow: 0 0 10px #b4d3d3; }
+  .exam-contacts__right {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 100px 0; }
+    .exam-contacts__right-main {
+      position: relative;
+      padding: 0 30% 0 10%; }
+      .exam-contacts__right-main:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: "";
+        display: block;
+        width: 20%;
+        height: 100%;
+        background-image: linear-gradient(-135deg, #b4d3d3 0%, #d9e7e7 100%); }
+    .exam-contacts__right-main-title {
+      color: #1a1a1d;
+      font-family: "Poppins";
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 36px; }
+  .exam-contacts__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .exam-contacts__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: 290px;
+        flex-basis: 290px;
+    padding: 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .exam-contacts__list-item-img {
+      padding-top: 10px; }
+    .exam-contacts__list-item-text {
+      color: #77777e;
+      font-family: "Nunito";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 36px;
+      padding-left: 20px; }
+
+@media (max-width: 600px) {
+  .exam-contacts__right-main {
+    padding: 0 5%; }
+  .exam-contacts__right-main:after {
+    width: 0; }
+  .exam-contacts__left-title {
+    font-size: 30px;
+    line-height: 1; }
+  .exam-contacts__list {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+  .exam-contacts__left-btn {
+    padding-right: 0;
+    padding-left: 25%; } }
+
+/*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 .page-content .wp-smiley,

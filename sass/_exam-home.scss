@@ -1,0 +1,253 @@
+.exam-home {
+  padding-top: 160px;
+}
+
+.exam-home-header {
+  padding-top: 160px;
+  background: url("./img/home-bg-header.jpg") no-repeat center;
+  background-size: cover;
+
+  &__slide {
+    position: relative;
+    padding-left: 14.38%;
+
+    &-socials{
+      position: absolute;
+      left: 0;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &-social{
+      padding: 20px 20px 20px 0;
+    }
+
+    &-social-link{
+      padding: 20px 20px 20px 0;
+      color: #1a1a1d;
+      &:hover{
+        color: #bfd9d9;
+      }
+    }
+
+    &-img{
+      width: 80%;
+      height: auto;
+    }
+
+    &-texts {
+      position: absolute;
+      bottom: 37%;
+      left: 10%;
+      max-width: 600px;
+    }
+
+    &-title {
+      color: #1a1a1d;
+      font-family: "Poppins";
+      font-size: 101px;
+      font-weight: 400;
+      line-height: 100px;
+      letter-spacing: 2.02px;
+    }
+
+    &-subtitle {
+      color: #1a1a1d;
+      font-family: "Nunito";
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 30px;
+      text-transform: uppercase;
+      letter-spacing: 3.4px;
+    }
+
+    &-btn-wrap{
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      margin: 0;
+      width: 370px;
+    }
+
+    &-btn{
+      width: 70%;
+      height: 110px;
+      background-color: #b4d3d3;
+      color: #ffffff;
+      font-family: "Nunito";
+      font-size: 14px;
+      font-weight: 900;
+      line-height: 110px;
+      text-transform: uppercase;
+      letter-spacing: 2.8px;
+      position: relative;
+      &:hover{
+        color: white;
+        background-color: #e2e8e8;
+      }
+      &:after{
+        position: absolute;
+        display: block;
+        width: 29%;
+        height: 100%;
+        top: 0;
+        left: 100%;
+        background-color: white;
+        content: url("./img/btn-play.jpg");
+      }
+    }
+  }
+}
+
+.exam-talents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px;
+
+
+  &__categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__category {
+    display: inline-block;
+
+    &-link {
+      color: #696970;
+      font-family: "Nunito";
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1;
+      text-transform: uppercase;
+      letter-spacing: 2.4px;
+      padding: 16px 35px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+        border-bottom: 2px solid #1a1a1d;
+      }
+    }
+  }
+
+
+  &__cards {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 80px 0;
+    margin: 0;
+  }
+
+  &__card {
+    flex-basis: 25%;
+    min-width: 240px;
+    flex-grow: 1;
+    position: relative;
+    transition: 700ms;
+
+    &:hover {
+      transition: 700ms;
+
+      .exam-talents__card-modal {
+        background-color: rgba(3, 4, 9, 0.81);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        padding-bottom: 20px;
+
+        &__content {
+          justify-self: end;
+        }
+      }
+    }
+
+    &-modal {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    &-name {
+      color: #ffffff;
+      font-family: "Poppins";
+      font-size: 30px;
+      font-weight: 400;
+      letter-spacing: 0.6px;
+    }
+
+    &-category {
+      color: #aeaeb7;
+      font-family: "Nunito";
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 2.4px;
+    }
+  }
+}
+
+.exam-news {
+
+  &__list{
+    padding: 65px 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &__list-item{
+    padding: 20px;
+    flex-basis: 33%;
+    min-width: 250px;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    &-main{
+      flex-basis: 60%;
+      padding: 0 0 0 20px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .exam-home-header__slide-title{
+    font-size: 25px;
+  }
+
+  .exam-home-header__slide-btn-wrap{
+    position: inherit;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .exam-home-header{
+    padding-top: 300px;
+
+  }
+  .exam-home-header__slide-texts{
+    bottom: 5%;
+  }
+  .exam-home-header__slide-btn-wrap{
+    display: none;
+  }
+}

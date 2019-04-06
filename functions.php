@@ -120,10 +120,25 @@ add_action( 'widgets_init', 'exam_widgets_init' );
  * Enqueue scripts and styles.
  */
 function exam_scripts() {
+	//BOOTSTRAP
+	wp_enqueue_style('bootstrap4', 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css');
+	wp_enqueue_script( 'boot1','https://code.jquery.com/jquery-3.3.1.slim.min.js', array( 'jquery' ),'',true );
+	wp_enqueue_script( 'boot2','https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js', array( 'jquery' ),'',true );
+	wp_enqueue_script( 'boot3','https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js', array( 'jquery' ),'',true );
+
+	//FONTAWESOME
+	wp_enqueue_style('fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
+
+	//FONTS
+	wp_enqueue_style( 'Nunito', 'https://fonts.googleapis.com/css?family=Nunito:400,700,900', false );
+	wp_enqueue_style( 'Poppins', 'https://fonts.googleapis.com/css?family=Poppins:400,500', false );
+
+	//MASONRY
+	wp_enqueue_script('masonry');
+
+	//DEFAULT
 	wp_enqueue_style( 'exam-style', get_stylesheet_uri() );
-
 	wp_enqueue_script( 'exam-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
 	wp_enqueue_script( 'exam-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -159,3 +174,156 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+// MY CUSTOM CODE
+function hw18_customize_register( $wp_customize ) {
+	$wp_customize->add_section( 'socials', array(
+		'title'       => __( 'Socials', 'socials' ),
+		'description' => '',
+		'priority'    => 120,
+	) );
+	//===
+	$wp_customize->add_setting( 'social_url_1', array(
+		'transport' => 'refresh'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social_url_1', array(
+		'label'    => __( 'social_url_1', 'socials' ),
+		'section'  => 'socials',
+		'settings' => 'social_url_1',
+	) ) );
+
+	$wp_customize->add_setting( 'social_label_1', array(
+		'transport' => 'refresh'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social_label_1', array(
+		'label'    => __( 'social_label_1', 'socials' ),
+		'section'  => 'socials',
+		'settings' => 'social_label_1',
+	) ) );
+	//===
+	$wp_customize->add_setting( 'social_url_2', array(
+		'transport' => 'refresh'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social_url_2', array(
+		'label'    => __( 'social_url_2', 'socials' ),
+		'section'  => 'socials',
+		'settings' => 'social_url_2',
+	) ) );
+
+	$wp_customize->add_setting( 'social_label_2', array(
+		'transport' => 'refresh'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social_label_2', array(
+		'label'    => __( 'social_label_2', 'socials' ),
+		'section'  => 'socials',
+		'settings' => 'social_label_2',
+	) ) );
+	//===
+	$wp_customize->add_setting( 'social_url_3', array(
+		'transport' => 'refresh'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social_url_3', array(
+		'label'    => __( 'social_url_3', 'socials' ),
+		'section'  => 'socials',
+		'settings' => 'social_url_3',
+	) ) );
+
+	$wp_customize->add_setting( 'social_label_3', array(
+		'transport' => 'refresh'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social_label_3', array(
+		'label'    => __( 'social_label_3', 'socials' ),
+		'section'  => 'socials',
+		'settings' => 'social_label_3',
+	) ) );
+	//===
+	$wp_customize->add_setting( 'social_url_4', array(
+		'transport' => 'refresh'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social_url_4', array(
+		'label'    => __( 'social_url_4', 'socials' ),
+		'section'  => 'socials',
+		'settings' => 'social_url_4',
+	) ) );
+
+	$wp_customize->add_setting( 'social_label_4', array(
+		'transport' => 'refresh'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social_label_4', array(
+		'label'    => __( 'social_label_4', 'socials' ),
+		'section'  => 'socials',
+		'settings' => 'social_label_4',
+	) ) );
+	//===
+	$wp_customize->add_setting( 'social_url_5', array(
+		'transport' => 'refresh'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social_url_5', array(
+		'label'    => __( 'social_url_5', 'socials' ),
+		'section'  => 'socials',
+		'settings' => 'social_url_5',
+	) ) );
+
+	$wp_customize->add_setting( 'social_label_5', array(
+		'transport' => 'refresh'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social_label_5', array(
+		'label'    => __( 'social_label_5', 'socials' ),
+		'section'  => 'socials',
+		'settings' => 'social_label_5',
+	) ) );
+	//===
+	$wp_customize->add_setting( 'social_url_6', array(
+		'transport' => 'refresh'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social_url_6', array(
+		'label'    => __( 'social_url_6', 'socials' ),
+		'section'  => 'socials',
+		'settings' => 'social_url_6',
+	) ) );
+
+	$wp_customize->add_setting( 'social_label_6', array(
+		'transport' => 'refresh'
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'social_label_6', array(
+		'label'    => __( 'social_label_6', 'socials' ),
+		'section'  => 'socials',
+		'settings' => 'social_label_6',
+	) ) );
+}
+
+add_action( 'customize_register', 'hw18_customize_register' );
+
+
+function create_post_types() {
+	register_post_type( 'talent',
+		array(
+			'labels'      => array(
+				'name'          => __( 'talents' ),
+				'singular_name' => __( 'talent' )
+			),
+			'public'      => true,
+			'has_archive' => true,
+			'supports'    => array(
+				'title',
+				'editor',
+				'thumbnail',
+				'excerpt',
+				'post-formats'
+			)
+		)
+	);
+}
+
+add_action( 'init', 'create_post_types' );

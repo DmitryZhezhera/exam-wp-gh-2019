@@ -1,0 +1,58 @@
+.exam-container {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.exam-text-center{
+  text-align: center;
+}
+
+.exam-btn{
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: none;
+  }
+
+  &--more{
+    margin: 0 auto;
+    color: #ffffff;
+    font-family: "Nunito";
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+
+    min-width: 220px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #b4d3d3;
+    &:hover{
+      color: #fff;
+      background-color: #e2e8e8;
+
+    }
+  }
+}
+
+.exam-section-title{
+  color: #1a1a1d;
+  font-family: "Poppins";
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 79px;
+  &:after{
+    content: '';
+    display: block;
+    height: 50px;
+    width: 150px;
+    border-bottom: 2px solid #242424;
+    margin: 0px auto;
+  }
+}
+

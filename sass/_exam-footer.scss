@@ -1,0 +1,79 @@
+.exam-footer {
+  &__container{
+
+  }
+
+  &__first{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #f5f5f5;
+    padding: 40px 0;
+  }
+
+  &__logo{
+    img{
+      max-width: 197px;
+      height: auto;
+    }
+  }
+
+  &__btn-letter{
+    color: #1a1a1d;
+    font-family: "Nunito";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    border-left: 1px solid #b4d3d3;
+    padding-left: 52px;
+
+    &:focus, &:visited{
+      color: #1a1a1d;
+    }
+
+    &:hover{
+      background-color: #b4d3d3;
+    }
+
+    &::after{
+      content: url("./img/footer-btn-letter.png");
+      position: relative;
+      margin-left: 40px;
+      top: 4px;
+    }
+  }
+
+  &__second{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #f5f5f5;
+    padding: 50px 0;
+  }
+
+  &__socials{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 220px;
+
+  }
+
+  &__socials-link{
+    padding: 10px;
+    color: #1a1a1d;
+    &:hover{
+      opacity: 0.8;
+    }
+    &:visited{
+      color: #1a1a1d;
+    }
+  }
+}

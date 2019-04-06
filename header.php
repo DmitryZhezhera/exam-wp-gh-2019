@@ -13,46 +13,37 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
 
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'exam' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$exam_description = get_bloginfo( 'description', 'display' );
-			if ( $exam_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $exam_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'exam' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+    <header class="exam-header">
+        <div class="exam-container exam-header__container">
+            <div class="exam-header__nav">
+                <label class="exam-header__nav-burger-label" for="site-navigation">
+                    <img src="<?php bloginfo( 'template_url' ); ?>/img/menu_burger.png" alt="burger">
+                    <input class="exam-header__nav-burger-checkbox" type="checkbox">
+                </label>
+                <nav id="site-navigation" class="exam-header__nav-list">
+					<?php
+					wp_nav_menu( array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+						'container'      => false,
+						'menu_class'     => 'exam-header__nav-list',
+					) );
+					?>
+                </nav>
+            </div>
+			<?php the_custom_logo(); ?>
+            <div class="exam-header__search">
+				<?php get_search_form(); ?>
+            </div>
+        </div>
+    </header>

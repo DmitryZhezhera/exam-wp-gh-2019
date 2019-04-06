@@ -8,29 +8,36 @@
  *
  * @package exam
  */
-
 ?>
-
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'exam' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'exam' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'exam' ), 'exam', '<a href="http://underscores.me/">Zhezhera Dmitriy</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
-
+<footer class="exam-footer">
+    <div class="exam-container exam-footer__container">
+        <div class="exam-footer__first">
+	        <h2 class="exam-footer__logo">
+		        <?php the_custom_logo();?>
+            </h2>
+            <a class="exam-btn exam-footer__btn-letter" href="#">
+                sign up our newsletter
+            </a>
+        </div>
+        <div class="exam-footer__second">
+            <span>© 2018 MI Talent. Designed by Tranmautritam for Mass Impressions.</span>
+            <div class="exam-footer__socials">
+		        <?php
+		        for ( $i = 0; $i < 6; $i ++ ) {
+			        $url = get_theme_mod( 'social_url_'.$i );
+			        if ( $url ) {
+				        ?>
+                        <a class="exam-footer__socials-link" href="<?php echo $url ?>">
+                            <i class="fa <?php echo get_theme_mod( 'social_label_'.$i ) ?>" aria-hidden="true"></i>
+                        </a>
+				        <?php
+			        }
+		        }
+		        ?>
+            </div>
+        </div>
+    </div>
+</footer>
 <?php wp_footer(); ?>
-
 </body>
 </html>
